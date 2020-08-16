@@ -6,7 +6,8 @@
 
 chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({color: '#3aa757'}, function() {
-    console.log("background.js: " + "The color is green.");
+    // alert("background.js: " + "Extenstion is being installed");
+    console.log('background.js: ' + 'The color is green.');
     console.log(console.file);
   });
 });
